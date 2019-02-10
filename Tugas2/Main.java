@@ -7,16 +7,16 @@ package com.base;
 
 /**
  *
- * @author admin
+ * @author 
+ * Nama : Angga Giantoro
+ * NPM  : 1841433
  */
 public class Main {
 
-    /**
-     * @param args the command line arguments
-     */
+
     public static void main(String[] args) {
         
-        System.out.println(" output class Circle ");
+        System.out.println(" Output Class Circle ");
         
         System.out.println("");
        
@@ -24,12 +24,13 @@ public class Main {
         System.out.println("Hasil output : " + c.getName());
         System.out.println("Hasil output : " + c.getArea());
         
-        System.out.println("");
-        
-        Rectangle r = new Rectangle(" Buku Tulis ", " 20 x 14 cm ");
-        System.out.println("Hasil output : " + r.getName());
-        System.out.println("Hasil output : " + r.getArea());
-        
+            System.out.println("");
+
+            System.out.println(" Output Class Rectangle ");
+
+            Rectangle r = new Rectangle(" Buku Tulis ", " 20 x 14 cm ");
+            System.out.println("Hasil output : " + r.getName());
+            System.out.println("Hasil output : " + r.getArea());
     }
     
 }

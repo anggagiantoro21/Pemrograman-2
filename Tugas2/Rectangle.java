@@ -15,16 +15,13 @@ public class Rectangle extends Shape {
         super(name, area);
     }
 
-    @Override
-    public String getArea() {
-        return super.getArea() + "( Area Rectangle )";
-    }
+        @Override
+        public String getArea() {
+            return super.getArea() + "( Area Rectangle )";
+        }
 
-    @Override
-    public String getName() {
-        return super.getName() + "( Rectangle )";
-    }
-    
-    
-    
+        @Override
+        public String getName() {
+            return super.getName() + "( Rectangle )";
+        }
 }

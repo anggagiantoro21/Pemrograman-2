@@ -15,15 +15,13 @@ public class Circle extends Shape {
         super(name, area);
     }
 
-    @Override
-    public String getArea() {
-        return super.getArea() + "( Area Circle )"; 
-    }
+        @Override
+        public String getArea() {
+            return super.getArea() + "( Area Circle )"; 
+        }
 
-    @Override
-    public String getName() {
-        return super.getName() + "( Circle )"; 
-    }
-    
-        
+        @Override
+        public String getName() {
+            return super.getName() + "( Circle )"; 
+        }
 }
