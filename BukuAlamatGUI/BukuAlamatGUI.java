@@ -36,7 +36,7 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
         LabelNama = new javax.swing.JLabel();
         LabelAlamat = new javax.swing.JLabel();
         LabelEmail = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
+        LabelNoTelp = new javax.swing.JLabel();
         NamaTxt = new javax.swing.JTextField();
         EmailTxt = new javax.swing.JTextField();
         AlamatTxt = new javax.swing.JTextField();
@@ -59,8 +59,8 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
         LabelEmail.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         LabelEmail.setText("Email");
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        jLabel1.setText("No. Telepon");
+        LabelNoTelp.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
+        LabelNoTelp.setText("No. Telepon");
 
         BtnHapus.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
         BtnHapus.setText("Hapus");
@@ -94,7 +94,7 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
                         .addGap(69, 69, 69)
                         .addComponent(EmailTxt))
                     .addGroup(layout.createSequentialGroup()
-                        .addComponent(jLabel1)
+                        .addComponent(LabelNoTelp)
                         .addGap(27, 27, 27)
                         .addComponent(NoTelpTxt))
                     .addGroup(layout.createSequentialGroup()
@@ -132,7 +132,7 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
                     .addComponent(EmailTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(21, 21, 21)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1)
+                    .addComponent(LabelNoTelp)
                     .addComponent(NoTelpTxt, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(29, 29, 29)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -146,10 +146,10 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
 
     private void BtnHapusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnHapusActionPerformed
         // TODO add your handling code here:
-        NamaTxt.setText(null);
-        AlamatTxt.setText(null);
-        EmailTxt.setText(null);
-        NoTelpTxt.setText(null);
+        NamaTxt.setText("");
+        AlamatTxt.setText("");
+        EmailTxt.setText("");
+        NoTelpTxt.setText("");
     }//GEN-LAST:event_BtnHapusActionPerformed
 
     private void BtnSimpanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_BtnSimpanActionPerformed
@@ -164,7 +164,7 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
                 writer.write(nama + " " + alamat + " " + email + " " + notelp);
                 writer.close();
             }
-            JOptionPane.showMessageDialog(rootPane, "Success"); 
+            JOptionPane.showMessageDialog(rootPane, "Selamat, berhasil tersimpan"); 
             }catch(HeadlessException | IOException e){
                 JOptionPane.showMessageDialog(rootPane, "Error");
         }
@@ -214,8 +214,8 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
     private javax.swing.JLabel LabelBukuAlamat;
     private javax.swing.JLabel LabelEmail;
     private javax.swing.JLabel LabelNama;
+    private javax.swing.JLabel LabelNoTelp;
     private javax.swing.JTextField NamaTxt;
     private javax.swing.JTextField NoTelpTxt;
-    private javax.swing.JLabel jLabel1;
     // End of variables declaration//GEN-END:variables
 }
