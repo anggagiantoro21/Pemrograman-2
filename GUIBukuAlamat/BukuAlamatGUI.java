@@ -45,6 +45,7 @@ public class BukuAlamatGUI extends javax.swing.JFrame {
         BtnSimpan = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Buku Alamat");
 
         LabelBukuAlamat.setFont(new java.awt.Font("Tahoma", 0, 24)); // NOI18N
         LabelBukuAlamat.setText("Buku Alamat");
